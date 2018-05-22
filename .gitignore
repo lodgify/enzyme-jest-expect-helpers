@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# lock files
+package-lock.json
+
+# Built files
+lib/
+
+# OS generated files
+.DS_Store
