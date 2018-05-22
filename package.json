@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "Simple expect helpers for unit testing with Jest and Enzyme",
   "main": "lib/index.js",
+  "files": ["lib"],
   "scripts": {
-    "clean": "rm -rf ./lib",
     "build:js": "BABEL_ENV=production babel expect-helpers/ -d lib/",
     "build": "npm run clean && npm run build:js",
+    "clean": "rm -rf ./lib",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
