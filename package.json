@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "description": "Simple expect helpers for unit testing with Jest and Enzyme",
   "main": "lib/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build:js": "BABEL_ENV=production babel expect-helpers/ -d lib/",
     "build": "npm run clean && npm run build:js",
     "clean": "rm -rf ./lib",
+    "commit": "git-cz",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -23,6 +26,8 @@
     "babel-eslint": "^8.2.3",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-env": "^1.7.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-lodgify": "^1.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -33,5 +38,10 @@
     "eslint-plugin-react": "^7.8.2",
     "prettier": "^1.12.1",
     "semantic-release": "^15.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
