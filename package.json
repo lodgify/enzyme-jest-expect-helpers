@@ -13,7 +13,7 @@
     "commit": "git-cz",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "precommit": "npm run lint && npm run build"
+    "pre-commit": "npm run lint && npm run build"
   },
   "author": "Lodgify",
   "license": "MIT",
