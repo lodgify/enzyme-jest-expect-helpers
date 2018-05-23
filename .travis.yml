@@ -15,4 +15,4 @@ deploy:
       branch: production
     skip_cleanup: true
     script:
-      - npx semantic-release
+      - npx semantic-release --branch production
