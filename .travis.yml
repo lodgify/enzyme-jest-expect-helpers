@@ -10,7 +10,7 @@ notifications:
   email: false
 
 deploy:
-  - provider: npm
+  - provider: script
     on:
       branch: production
     skip_cleanup: true
