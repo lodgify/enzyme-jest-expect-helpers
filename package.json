@@ -12,7 +12,8 @@
     "clean": "rm -rf ./lib",
     "commit": "git-cz",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "precommit": "npm run lint && npm run build"
   },
   "author": "Lodgify",
   "license": "MIT",
