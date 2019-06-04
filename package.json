@@ -6,6 +6,10 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lodgify/enzyme-jest-expect-helpers.git"
+  },
   "scripts": {
     "build:js": "BABEL_ENV=production babel expect-helpers/ -d lib/",
     "build": "npm run clean && npm run build:js",
@@ -18,9 +22,9 @@
   "author": "Lodgify",
   "license": "MIT",
   "peerDependencies": {
-    "enzyme": "^3.3.0",
+    "enzyme": ">= 3",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.4.3"
+    "jest": ">= 23"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
